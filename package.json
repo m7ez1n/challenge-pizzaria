@@ -5,6 +5,9 @@
   "repository": "https://github.com/m7Aei/challenge-pizzaria.git",
   "author": "m7Aei <mateuspm2015@hotmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
