@@ -2,7 +2,7 @@
 
 ### Falando sobre o projeto :finnadie:
 
-É um desafio para uma vaga backend de uma empresa gringa chamada [AmbulnzLLC](https://github.com/AmbulnzLLC) que propôs que fizéssemos uma API que retorne um JSON para que seja consumida por um frontend.
+É um desafio para uma vaga backend de uma empresa gringa chamada [AmbulnzLLC](https://github.com/AmbulnzLLC) que propôs que fizéssemos uma API que retorne um JSON para que seja consumida por um frontend, ai pra quem quiser tentar fazer o projeto é esse [aqui](https://github.com/AmbulnzLLC/fullstack-challenge/tree/master/backend) ó!! :boom::rocket:
 
 ### Mais informações sobre o desafio :trollface:
 
@@ -10,9 +10,9 @@
 
 Ela deve ter as seguintes entidades com os relacionamentos adequados
 
-- [ ] pizza - has a name and price (e.g. Margherita $5, Pepperoni $6, ...)
-- [ ] order - has items
-- [ ] order item - has a pizza and quantity
+- [x] pizza - has a name and price (e.g. Margherita $5, Pepperoni $6, ...)
+- [x] order - has items
+- [x] order item - has a pizza and quantity
 
 #### O que a API deve retornar ? :rage4:
 
