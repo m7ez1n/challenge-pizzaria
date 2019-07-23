@@ -3,7 +3,8 @@ const mongoosePaginate = require('mongoose-paginate')
 
 const OrderSchema = new mongoose.Schema({
   items: {
-    type: Array,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'OrderItem',
     require: true
   }
 })
