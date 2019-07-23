@@ -18,9 +18,9 @@ Ela deve ter as seguintes entidades com os relacionamentos adequados
 
 Ela deve retornar uma resposta em JSON para as seguintes rotas
 
-- [ ] /api/orders (list of orders)
-- [ ] /api/orders/:id (details of an individual order)
-- [ ] /api/pizzas (list of pizzas; see './backend/example-pizzas.json')
+- [x] /api/orders (list of orders)
+- [x] /api/orders/:id (details of an individual order)
+- [x] /api/pizzas (list of pizzas; see './backend/example-pizzas.json')
 
 A resposta em JSON deve ter a seguinte estrutura:
 
@@ -72,6 +72,12 @@ A resposta em JSON deve ter a seguinte estrutura:
   }
 ]
 ```
+
+### Implementações que quero fazer :flushed:
+
+- [ ] Fazer testes unitários
+- [ ] Fazer testes de integração
+- [ ] Criar todos validators
 
 ### Acessem a He4rtDevs: :exclamation: :purple_heart:
 
