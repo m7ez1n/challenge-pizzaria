@@ -15,6 +15,7 @@ routes.put('/api/orders/:id', OrderController.update)
 routes.delete('/api/orders/:id', OrderController.destroy)
 
 // Pizzas
-routes.get('/api/pizzas', validate(PizzaValidator), PizzaController.index)
+routes.get('/api/pizzas', PizzaController.index)
+routes.post('/api/pizzas', validate(PizzaValidator), PizzaController.store)
 
 module.exports = routes
