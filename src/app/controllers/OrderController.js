@@ -1,13 +1,13 @@
-const Order = require('../models/Order')
 const OrderItem = require('../models/OrderItem')
 
 class OrderController {
   async index (req, res) {
-    const orders = await Order.paginate(
+    const orders = await OrderItem.paginate(
       {},
       {
         page: req.query.page || 1,
-        limit: 20
+        limit: 20,
+        sort: '-createAt'
       }
     )
 
@@ -21,9 +21,9 @@ class OrderController {
   }
 
   async store (req, res) {
-    const order = await Order.create(req.body)
+    const item = await OrderItem.create(req.body)
 
-    return res.json(order)
+    return res.json(item)
   }
 
   async update (req, res) {
