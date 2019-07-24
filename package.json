@@ -6,7 +6,8 @@
   "author": "m7Aei <mateuspm2015@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js",
+    "test": "jest"
   },
   "dependencies": {
     "dotenv": "^8.0.0",
@@ -23,6 +24,7 @@
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.8.0",
     "nodemon": "^1.19.1"
   }
 }
