@@ -77,7 +77,7 @@ A resposta em JSON deve ter a seguinte estrutura:
 
 - [ ] Fazer testes unitários
 - [ ] Fazer testes de integração
-- [ ] Criar todos validators
+- [x] Criar todos validators
 
 ### Acessem a He4rtDevs: :exclamation: :purple_heart:
 
