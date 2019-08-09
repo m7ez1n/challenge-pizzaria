@@ -75,8 +75,7 @@ A resposta em JSON deve ter a seguinte estrutura:
 
 ### Implementações que quero fazer :flushed:
 
-- [ ] Fazer testes unitários
-- [ ] Fazer testes de integração
+- [x] Fazer testes unitários
 - [x] Criar todos validators
 
 ### Acessem a He4rtDevs: :exclamation: :purple_heart:
