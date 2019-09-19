@@ -77,7 +77,7 @@ A resposta em JSON deve ter a seguinte estrutura:
 
 ### Implementações que quero fazer :flushed:
 
--[ ] Vou aplicar TDD
+- [ ] Vou aplicar TDD
 
 <h2 align="center">
   Acessem a He4rt e a Rocketseat :purple_heart:
