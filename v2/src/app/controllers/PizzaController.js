@@ -1,6 +1,19 @@
 import Pizza from '../models/Pizza';
 
 class PizzaController {
+  async index(req, res) {
+    const { page = 1 } = req.query;
+
+    const pizzas = await Pizza.findAll({
+      order: ['name'],
+      limit: 10,
+      offset: (page - 1) * 10,
+      attributes: ['name', 'price', 'ingredients'],
+    });
+
+    return res.json(pizzas);
+  }
+
   async store(req, res) {
     const { name } = req.body;
 
