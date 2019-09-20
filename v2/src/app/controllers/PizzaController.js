@@ -1,3 +1,4 @@
+import * as Yup from 'yup';
 import Pizza from '../models/Pizza';
 
 class PizzaController {
@@ -15,6 +16,16 @@ class PizzaController {
   }
 
   async store(req, res) {
+    const validation = Yup.object().shape({
+      name: Yup.string().required(),
+      price: Yup.number().required(),
+      ingredients: Yup.string().required(),
+    });
+
+    if (!(await validation.isValid(req.body))) {
+      return res.status(400).json({ error: 'Validation error' });
+    }
+
     const { name } = req.body;
 
     const checkName = await Pizza.findOne({ where: { name } });
