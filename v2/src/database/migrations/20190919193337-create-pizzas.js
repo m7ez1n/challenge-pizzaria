@@ -17,12 +17,6 @@ module.exports = {
       },
       ingredients: {
         type: Sequelize.STRING,
-        get() {
-          return JSON.parse(this.getDataValue('ingredients'));
-        },
-        set(value) {
-          return this.setDataValue('ingredients', JSON.stringify(value));
-        },
         allowNull: false,
       },
       created_at: {
