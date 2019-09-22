@@ -8,6 +8,7 @@ const routes = new Router();
 routes.get('/api/pizzas', PizzaController.index);
 routes.post('/api/pizzas', PizzaController.store);
 
+routes.get('/api/order', OrderController.index);
 routes.post('/api/order', OrderController.store);
 
 export default routes;
