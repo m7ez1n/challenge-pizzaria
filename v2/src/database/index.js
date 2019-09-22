@@ -3,20 +3,28 @@ import Sequelize from 'sequelize';
 import databaseConfig from '../config/database';
 
 import Pizza from '../app/models/Pizza';
+import Order from '../app/models/Order';
 
-const models = [Pizza];
+const models = [Pizza, Order];
 
 class Database {
   constructor() {
+    this.connection = new Sequelize(databaseConfig);
+
     this.init();
+    this.associate();
   }
 
   init() {
-    this.connection = new Sequelize(databaseConfig);
+    models.forEach(model => model.init(this.connection));
+  }
 
-    models
-      .map(model => model.init(this.connection))
-      .map(model => model.associate && model.associate(this.connection.models));
+  associate() {
+    models.forEach(model => {
+      if (model.associate) {
+        model.associate(this.connection.models);
+      }
+    });
   }
 }
 
