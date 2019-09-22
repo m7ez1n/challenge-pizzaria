@@ -9,6 +9,7 @@ routes.get('/api/pizzas', PizzaController.index);
 routes.post('/api/pizzas', PizzaController.store);
 
 routes.get('/api/order', OrderController.index);
+routes.get('/api/order/:id', OrderController.show);
 routes.post('/api/order', OrderController.store);
 
 export default routes;

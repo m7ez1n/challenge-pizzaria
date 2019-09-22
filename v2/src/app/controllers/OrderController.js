@@ -23,6 +23,20 @@ class OrderController {
     return res.json(orders);
   }
 
+  async show(req, res) {
+    const order = await Order.findByPk(req.params.id, {
+      attributes: ['id', 'quantity'],
+      include: [
+        {
+          model: Pizza,
+          attributes: ['name', 'price', 'ingredients'],
+        },
+      ],
+    });
+
+    return res.json(order);
+  }
+
   async store(req, res) {
     const validation = Yup.object().shape({
       pizza_id: Yup.number().required(),
