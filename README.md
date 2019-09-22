@@ -12,17 +12,17 @@ Bom, estava olhando o meu github e vi esse challenge que tinha feito e não faz 
 
 Ela deve ter as seguintes entidades com os relacionamentos adequados
 
-- [ ] pizza - has a name and price (e.g. Margherita $5, Pepperoni $6, ...)
-- [ ] order - has items
-- [ ] order item - has a pizza and quantity
+- [X] pizza - has a name and price (e.g. Margherita $5, Pepperoni $6, ...)
+- [X] order - has items
+- [X] order item - has a pizza and quantity
 
 #### O que a API deve retornar ? :rage4:
 
 Ela deve retornar uma resposta em JSON para as seguintes rotas
 
-- [ ] /api/orders (list of orders)
-- [ ] /api/orders/:id (details of an individual order)
-- [ ] /api/pizzas (list of pizzas; see './backend/example-pizzas.json')
+- [X] /api/orders (list of orders)
+- [X] /api/orders/:id (details of an individual order)
+- [X] /api/pizzas (list of pizzas; see './backend/example-pizzas.json')
 
 A resposta em JSON deve ter a seguinte estrutura:
 
@@ -77,7 +77,7 @@ A resposta em JSON deve ter a seguinte estrutura:
 
 ### Implementações que quero fazer :flushed:
 
-- [ ] Vou aplicar TDD
+- [X] Vou aplicar TDD
 
 <h2 align="center">
   Acessem a He4rt e a Rocketseat :purple_heart:
